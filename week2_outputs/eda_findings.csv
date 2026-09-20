@@ -1,0 +1,11 @@
+Finding,Value
+Overall survival rate,38.38%
+Female survival rate,74.20%
+Male survival rate,18.89%
+1st Class survival rate,62.96%
+2nd Class survival rate,47.28%
+3rd Class survival rate,24.24%
+Highest family-size survival rate,72.41% (FamilySize 4)
+Lowest age-group survival rate,22.73% (Senior)
+Strongest correlation with survival,Pclass (-0.3385)
+Potential Fare outliers,116
