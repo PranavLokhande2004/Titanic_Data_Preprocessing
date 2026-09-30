@@ -187,3 +187,94 @@ The EDA showed that survival outcomes varied across several passenger characteri
 - `week2_outputs/survival_distribution.png`
 
 
+## Week 3: Unsupervised Learning & Clustering
+
+### Objective
+
+The objective of Week 3 was to apply an unsupervised learning technique to the Titanic dataset and identify meaningful passenger groups using clustering.
+
+### Algorithm Used
+
+- K-Means Clustering
+- Number of clusters: 4
+- Random state: 42
+- Number of initializations: 10
+
+### Features Used for Clustering
+
+The following features were selected:
+
+- Pclass
+- Age
+- Fare
+- FamilySize
+
+The `Survived` column was not used for clustering because it represents the outcome/target variable. It was used separately after clustering to interpret the resulting groups.
+
+### Preprocessing
+
+Before applying K-Means:
+
+1. Missing values were checked.
+2. The selected features contained no missing values.
+3. Features were standardized using `StandardScaler`.
+4. The Elbow Method was used to select a practical number of clusters.
+
+### Elbow Method
+
+The Elbow Method was evaluated for K values from 2 to 8.
+
+K = 4 was selected as a practical balance between reducing within-cluster variation and keeping the number of clusters manageable.
+
+### Cluster Results
+
+| Cluster | Pclass | Age | Fare | FamilySize | Passengers | Survival Rate |
+|---|---:|---:|---:|---:|---:|---:|
+| 0 | 1.31 | 40.53 | 44.21 | 1.60 | 240 | 53.33% |
+| 1 | 2.81 | 26.92 | 11.75 | 1.32 | 509 | 27.50% |
+| 2 | 1.00 | 29.58 | 199.87 | 2.64 | 45 | 75.56% |
+| 3 | 2.74 | 14.44 | 32.05 | 5.38 | 97 | 41.24% |
+
+### Cluster Interpretation
+
+**Cluster 0:**  
+This cluster contains 240 passengers with relatively higher class, older average age, moderate average fare, and small family size.
+
+**Cluster 1:**  
+This is the largest cluster with 509 passengers. It mainly represents lower-class passengers with a younger average age, low average fare, and small family size.
+
+**Cluster 2:**  
+This cluster contains 45 passengers and is characterized by first-class passengers with a very high average fare. It also had the highest observed survival rate among the four clusters.
+
+**Cluster 3:**  
+This cluster contains 97 passengers and is characterized by younger passengers and relatively large family sizes.
+
+### Week 3 Visualizations
+
+The following visualizations were generated:
+
+- `elbow_method.png`
+- `kmeans_clusters.png`
+- `survival_by_cluster.png`
+- `cluster_feature_comparison.png`
+
+### Key Findings
+
+- K-Means successfully grouped the Titanic passengers into four clusters based on passenger characteristics.
+- Standardization was important because the selected features had different scales.
+- The largest cluster contained 509 passengers.
+- The cluster with the highest average fare consisted of first-class passengers.
+- Survival rate was analyzed separately after clustering to understand the characteristics of the identified groups.
+
+### Challenges
+
+- Selecting appropriate features for unsupervised learning.
+- Determining a practical number of clusters using the Elbow Method.
+- Understanding clusters without using a predefined target variable.
+- Interpreting clusters based on multiple passenger characteristics.
+
+### Conclusion
+
+K-Means clustering provided a useful way to segment Titanic passengers based on class, age, fare, and family size. The analysis demonstrated the practical use of unsupervised learning for discovering patterns in data without using a target label during cluster formation.
+
+
