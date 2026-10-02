@@ -278,3 +278,49 @@ The following visualizations were generated:
 K-Means clustering provided a useful way to segment Titanic passengers based on class, age, fare, and family size. The analysis demonstrated the practical use of unsupervised learning for discovering patterns in data without using a target label during cluster formation.
 
 
+
+## Week 4: Supervised Learning Model Implementation
+
+### Objective
+
+The objective of Week 4 was to implement supervised machine learning models for predicting whether a passenger survived the Titanic disaster. This was treated as a binary classification problem, where the target variable is `Survived`.
+
+- `0` = Did not survive
+- `1` = Survived
+
+### Dataset
+
+The cleaned Titanic dataset from Week 1 was used for model development.
+
+Dataset shape: **891 rows × 13 columns**
+
+The following features were selected:
+
+- Pclass
+- Sex
+- Age
+- SibSp
+- Parch
+- Fare
+- Embarked
+
+The target variable was:
+
+- Survived
+
+The `Survived` column was not used as an input feature because it is the variable being predicted.
+
+### Data Preparation and Feature Engineering
+
+The dataset was divided into training and testing sets using an 80:20 split.
+
+```python
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.20,
+    random_state=42,
+    stratify=y
+)
+
+
