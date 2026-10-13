@@ -323,4 +323,51 @@ X_train, X_test, y_train, y_test = train_test_split(
     stratify=y
 )
 
+## Week 5: Deep Learning Application in Data Science
+
+### Project: Titanic Survival Prediction Using an Artificial Neural Network
+
+**Objective:** Build a neural network using TensorFlow and Keras to predict passenger survival on the Titanic dataset.
+
+### Technologies Used
+- Python
+- TensorFlow and Keras
+- Pandas and NumPy
+- Scikit-learn
+- Matplotlib and Seaborn
+
+### Work Completed
+- Prepared numerical and categorical passenger features.
+- Handled missing values, scaled numerical features, and encoded categorical features.
+- Split the data into training and testing sets using an 80:20 ratio.
+- Designed an Artificial Neural Network with two hidden Dense layers containing 32 and 16 neurons.
+- Applied ReLU activation, Dropout regularization, the Adam optimizer, and binary cross-entropy loss.
+- Used early stopping to help reduce overfitting.
+- Evaluated the model using accuracy, precision, recall, F1-score, and ROC-AUC.
+- Compared the neural network with Logistic Regression and Random Forest models from Week 4.
+
+### Neural Network Results
+
+| Metric | Result |
+|---|---:|
+| Accuracy | 80.45% |
+| Precision | 82.69% |
+| Recall | 62.32% |
+| F1-score | 71.07% |
+| ROC-AUC | 85.80% |
+
+*These values represent the recorded evaluation run. Results may vary slightly when the model is retrained.*
+
+### Generated Outputs
+The `week5_outputs/` directory contains:
+- `training_accuracy.png`
+- `training_loss.png`
+- `confusion_matrix.png`
+- `neural_network_metrics.csv`
+- `model_comparison.csv`
+- `model_comparison.png`
+
+### Key Learning
+This project demonstrated how neural networks learn nonlinear patterns, how validation and early stopping can help control overfitting, and why model evaluation should consider multiple metrics rather than accuracy alone.
+
 
