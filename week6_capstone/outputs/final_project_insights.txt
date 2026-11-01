@@ -1,0 +1,18 @@
+
+TITANIC CAPSTONE PROJECT - FINAL INSIGHTS
+
+1. Overall survival rate: 38.38%
+
+2. Gender with highest survival rate: female
+
+3. Passenger class with highest survival rate: 1
+
+4. Best model by accuracy: Random Forest
+
+5. Best model accuracy: 82.68%
+
+6. Cluster with highest survival rate:
+   Cluster 2
+
+7. Highest cluster survival rate:
+   75.56%

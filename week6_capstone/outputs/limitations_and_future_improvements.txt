@@ -1,0 +1,15 @@
+PROJECT LIMITATIONS
+
+- The Titanic dataset contains only 891 passenger records.
+- Cabin information has a large number of missing values.
+- The dataset represents one historical disaster and may not generalize to other situations.
+- The neural network may not outperform traditional machine learning models on small tabular data.
+- Model performance depends on the selected features and train-test split.
+
+FUTURE IMPROVEMENTS
+
+- Use additional passenger-related features if reliable data is available.
+- Apply hyperparameter tuning to improve model performance.
+- Experiment with additional classification algorithms.
+- Use cross-validation for more reliable model evaluation.
+- Test the workflow on larger and different datasets.
