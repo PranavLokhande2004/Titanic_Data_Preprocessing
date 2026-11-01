@@ -371,3 +371,26 @@ The `week5_outputs/` directory contains:
 This project demonstrated how neural networks learn nonlinear patterns, how validation and early stopping can help control overfitting, and why model evaluation should consider multiple metrics rather than accuracy alone.
 
 
+## Week 6: Integrative Capstone Project
+
+The final week focuses on integrating the work completed throughout the
+six-week Virtual Data Science with Python internship.
+
+### Objectives
+- Combine data cleaning and preprocessing.
+- Perform exploratory data analysis and visualization.
+- Apply K-Means clustering.
+- Compare supervised machine learning models.
+- Implement an Artificial Neural Network (ANN).
+- Present final project insights and limitations.
+
+### Project Files
+- `week6_capstone/capstone_analysis.py` – Main capstone analysis script.
+- `week6_capstone/outputs/` – Final analysis results, charts, CSV files, and project insights.
+
+### Technologies Used
+Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow/Keras.
+
+### Outcome
+The capstone brings together data preprocessing, exploratory analysis,
+clustering, supervised learning, and deep learning using the Titanic dataset.
